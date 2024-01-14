@@ -1,11 +1,3 @@
-/**
-* Template Name: Folio
-* Updated: Jan 09 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -97,9 +89,10 @@ p {
 }
 
 .section-title h2 {
-  font-size: 25px;
+  font-size: 45px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  color: #b8a07e;
 }
 
 .form-control {
@@ -558,7 +551,6 @@ p {
 #about {
   width: 100%;
   height: auto;
-  background: #f7f7f7;
   padding-top: 120px;
 }
 
@@ -593,7 +585,6 @@ p {
 # Services
 --------------------------------------------------------------*/
 #services {
-  background: #f7f7f7;
   position: relative;
   padding-bottom: 80px;
 }
@@ -639,6 +630,67 @@ p {
 }
 
 /*--------------------------------------------------------------
+# Quote
+--------------------------------------------------------------*/
+#section-my-quote {
+  background: #f7f7f7;
+}
+
+blockquote {
+  font-family: var(--body-font);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4em;
+  border: none;
+  border-left: solid 3px #333333;
+  padding-left: 30px;
+  color: #606060;
+}
+
+blockquote span {
+  font-family: var(--body-font);
+  display: block;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+blockquote.s2 {
+  border: none;
+  text-align: left;
+  padding: 30px 30px 30px 60px;
+  margin-top: 20px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+blockquote.s2:before {
+  font-family: "FontAwesome";
+  content: "\f10e";
+  font-style: normal;
+  position: absolute;
+  margin-left: -30px;
+}
+
+blockquote.s1 {
+  padding: 0px;
+}
+
+blockquote.s1:before {
+  font-family: "FontAwesome";
+  content: "\f10d";
+  display: block;
+  color: rgba(0, 0, 0, .1);
+  z-index: -1;
+  font-size: 40px;
+  top: 0;
+  left: 0;
+}
+
+/*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 #portfolio {
@@ -679,6 +731,17 @@ p {
 
 #portfolio .portfolio-item {
   margin-bottom: 30px;
+}
+
+#portfolio .portfolio-item img {
+  filter: grayscale(100%);
+  transition: transform .5s ease;
+  border: 3px solid #b8a07e;
+}
+
+#portfolio .portfolio-item img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 #portfolio .portfolio-item .portfolio-info {
@@ -823,7 +886,17 @@ p {
 }
 
 .journal-block .journal-info img {
-  max-width: 100%;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transition: transform .5s ease;
+  border: 3px solid #b8a07e;
+}
+
+.journal-block .journal-info img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
 }
 
 .journal-block .journal-info .journal-txt {
@@ -853,7 +926,7 @@ p {
 }
 
 /*--------------------------------------------------------------
-# Journal
+# Contact
 --------------------------------------------------------------*/
 #contact {
   height: auto;
@@ -1062,7 +1135,6 @@ p {
 
 blockquote {
   padding: 40px;
-  background-color: #f2f2f2;
   margin: 30px 0;
   border: none;
   border-left: 4px solid #b8a07e;
@@ -1073,18 +1145,19 @@ blockquote {
 --------------------------------------------------------------*/
 #footer {
   background: #f7f7f7;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 25px;
 }
 
 #footer .socials-media {
   width: 100%;
+  margin-bottom: 0;
 }
 
 #footer .socials-media ul {
   display: inline-block;
   float: none;
-  margin: 0 0 20px 0;
+  margin: 0;
 }
 
 #footer .socials-media ul li {
@@ -1113,6 +1186,7 @@ blockquote {
   letter-spacing: 0.1em;
   font-weight: 500;
   margin-top: 0;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
