@@ -1146,6 +1146,13 @@ blockquote.s1:before {
   margin-left: 5px;
 }
 
+.content-main .cocolyze-project img {
+  place-content: center;
+  object-fit: cover;
+  height: 200px;
+  border-radius: 10px;
+}
+
 /* Commonts */
 .comments {
   background: #fff;
